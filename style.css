@@ -1,0 +1,98 @@
+
+@font-face {
+    font-family: "Outfit-Regular";
+    src: url('fonts/static/Outfit-Regular.ttf');
+}
+
+
+
+:root {
+    --greyish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+    --white-bacground: hsl(0, 0%, 100%);
+    --font-family-regular: 'Outfit-Regular';
+    --font-weight-normal: 400; 
+    --font-weight-bold: 700;
+    --font-size-paragraph: 15px;
+    --font-size-title: 18px;
+    --font-size-small: 12px
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+body {
+    margin: 0 auto;
+    width: min(90%, 90rem);
+    background-color: var(--greyish-blue);
+    
+}
+
+@media (min-width: 450){
+    body {
+        margin: 0 auto;
+        width: min(50%, 50rem);
+        background-color: var(--greyish-blue);
+        
+    }
+}
+
+.card-section {
+    height: 100vh;
+    display: flex;
+    justify-content: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 225px;
+    height: 390px;
+    background-color: var(--white-bacground);
+    border-radius: 12px;
+    padding: 0.8rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;;
+    
+}
+
+.barcode {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 30px; */
+}
+
+.image {
+    width: 100%;
+    height: 240px;
+    
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-content {
+    padding: 0.5rem;
+}
+
+.title {
+    font-size: var(--font-size-title);
+    font-family: var(--font-family-regular);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    margin-top: 0.6rem;
+}
+
+p {
+    font-size: var(--font-size-small);
+    font-family: var(--font-family-regular);
+    font-weight: var(--font-weight-normal);
+    text-align: center;
+    color: var(--greyish-blue);
+    margin-top: 1rem;
+}
